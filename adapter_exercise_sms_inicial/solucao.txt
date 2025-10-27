@@ -1,0 +1,4 @@
+Soluçao encontrada :  Criar um adaptador para VivoService ->  a mesma é nossa
+classe adaptadora, assim , o fluxo se torna vivoservice -> adaptador -> serviço
+a medida que novas operadoras chegam com sua propria logica de negocio (service)
+é necessaria a criacao de uma classe adapter
