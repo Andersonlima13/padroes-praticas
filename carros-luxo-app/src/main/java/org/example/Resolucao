@@ -1,0 +1,4 @@
+Criar uma class veiculo brasileiro que extende DE Veiculo, a mesma usa getspeed
+(contrato de veiculointerface) a prorpia classe veiculo brasileiro importa
+um adapter que faz a conversao da vel em km para mph. A diferença aqui é
+que veiculo brasileiro tem o metodo de get por KMh
