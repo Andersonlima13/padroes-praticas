@@ -1,0 +1,60 @@
+ta , se tratando de servicos , creio que um servico de chat
+é o mesmo para todo cliente
+o service em si é o proprio chamado
+
+
+chamado criado -> analise (seria um estado de analise?) -> tecnico
+define qual o problema 
+
+
+
+strategy aqui -> conferir qual o atendimento e adotar a melhor
+estragia de solucao para o mesmo
+
+porem, aparentemente nao faz sentido , pois nao seria como resultados 
+diferentes ex "defeito de hardware" nao é como se eu podesse adotar uma
+estrategia diferente.
+
+
+
+usando state
+
+vamos ter a interface "chamado"
+com metodos 
+chamadoAberto()
+fecharChamado()
+moverParaAtendimento()
+
+
+
+contexto : "AtendimentoChamado"
+statusChamado()
+- oque fazer no estado atual 
+mudarStatusChamado()
+chamadoAberto()
+fecharChamado()
+moverParaAtendimento()
+
+
+
+
+
+
+
+Estados concretos : chamado aberto / chamado fechado / chamado em andamento
+se chamado em aberto faça tal coisa
+se chamado em atendimento faça outra coisa
+se chamado fechado , ciclo encerra
+
+
+
+
+aqui o strategy nao cabe, pois a estrategia é do proprio contexto 
+de nada vale termos classes concretas, pois o cliente nao define
+isso, e sim o proprio metodo crocreto faz a assinatura de como 
+esse chamado em atendimento ta sendo tratado , seja hardware, software
+infra ou seja la oq for.
+
+
+
+

@@ -1,0 +1,36 @@
+Strategy -> Usar quando existe um contexto de "preciso de um resultado
+X e posso chegar nele de diferentes formas" 
+
+Como por exemplo : Chegar à um determinado endereço, o programa usa 
+X algoritimos que podem verificar o caminho , cada algoritimo 
+trabalhando de maneira independente, para chegar ao mesmo objetivo.
+
+
+
+Observer -> Principio de programaçao reativa , algo como "ao realizar
+uma açao, essa mesma vai promover alteraçoes X Y Z , pense em
+ um  mesmo objeto utilizando de diferentes classes  para fazer coisas
+completamente diferentes , mas com logicas separadas.
+
+Ex : Quando o usuário clicar em "votar" quero que o voto dele seja incrementado
+em 1 , que uma notificaçao seja disparada, e que uma confirmaçao de voto
+seja enviada. logicas diferentes que acontecem a partir de uma reaçao.
+
+
+
+
+Adapter -> Logica de adaptaçao, basicamente seu programa deve ter uma classe
+que vai adaptar seu problema ao invés de mudar a logica de funcionamento,
+a adaptaçao vai ser feita para continuar usando a mesma logica de um
+serviço/programa
+
+
+Ex : vamos supor que nosso programa processa pdfs de alunos , cada pdf
+tem um padrao de paragrafos a seguir, porem os alunos de uma turma X
+tem a geraçao de pdf diferente.
+
+Logo -> a solucao é criar um adaptador que se adequa ao nosso padrao de 
+processamento/recebimento de pdfs , levando em conta por exemplo, que 
+ter pdfs em um certo formato trataria-se de uma regra de negocio do
+nosso programa 
+
