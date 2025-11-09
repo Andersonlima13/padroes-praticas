@@ -1,0 +1,8 @@
+o contexto fica responsavel por sempre inciar e chamar o proximo
+estado, nesse caso, nao foi definido um estado inicial, podendo
+o mesmo ser instanciado em qualquer estado concreto (vermelho,verde,amarelo)
+cada estado concreto tem a funçao de chamar o proximo estado a partir
+do contexto
+
+interface mantem um "executar estado" pois mantem essa açao executando
+a todo tempo dentro de cada estado concreto
