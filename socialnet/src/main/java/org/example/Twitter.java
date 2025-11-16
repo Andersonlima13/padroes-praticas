@@ -1,4 +1,15 @@
 package org.example;
 
-public class Twitter {
+public class Twitter extends {
+    public Boolean logging(String username, String password){
+        return true;
+    }
+
+    public Boolean sendData(String data){
+        return true;
+    }
+
+    public Boolean logout(){
+        return true;
+    }
 }

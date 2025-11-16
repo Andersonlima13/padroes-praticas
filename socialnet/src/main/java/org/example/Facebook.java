@@ -1,7 +1,16 @@
 package org.example;
 
-public class Facebook {
+public class Facebook extends {
 
+    public Boolean logging(String username, String password){
+        return true;
+    }
 
-    // ao inves de implementar logins aqui, isso vai diretamente em socialnetwork
+    public Boolean sendData(String data){
+        return true;
+    }
+
+    public Boolean logout(){
+        return true;
+    }
 }
