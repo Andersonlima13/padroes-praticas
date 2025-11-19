@@ -1,0 +1,45 @@
+gerenciar equipamentos
+quando o prof sai a ideia é desligar tudo
+vejo isso aqui como um passo a passo
+
+docente chega no ambiente ->
+docente passa o crachá para identificar
+porta é liberada
+(nesse processo o docente é registrado na entrada e saida do bloco)
+
+
+/// docente segue o passo a passoa acima sempre que chega a um bloco
+
+
+
+ao entrar no bloco verifica se equipamentos estao desligados
+se nao -> equipamentos sao ligados
+
+docente saiu  -> equipamentos desligados
+
+e assim ocorre de forma ciclica
+
+
+a questao aqui é toda envolvida no docente
+- docente passar o cartao -> porta é liberada -> registro é feito ->  equipamentos liberdados -> docente passa o cartao
+
+
+
+no observer pode ser -> ao docente passar cartao -> é afetado registro e equipamentos, dps que ele passar dnv, afeta os mesmosequ
+--> possiveis opcoes (observer ,state )
+
+
+
+equipamentoLigado - equipamento desligado - classe concreta
+Equipamento interface
+contexto -> bloco
+
+
+
+
+observer ->
+
+
+
+
+
