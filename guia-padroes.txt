@@ -34,3 +34,31 @@ processamento/recebimento de pdfs , levando em conta por exemplo, que
 ter pdfs em um certo formato trataria-se de uma regra de negocio do
 nosso programa 
 
+
+
+
+
+state -> como o proprio nome diz, é um padrao ideal para problemas que 
+são bem amarrados e seguem etapa por etapa, como por exemplo, um problema
+relacionado a aprovar um pagamento, estados de uma entrega, estados de um
+semaforo. geralmente sao estados bem amarrados e acoplados um ao outro.
+
+
+template -> é um padrao que define os passos de um algoritimo porem tem
+uma classe principal que conta com o template metodo (hook) e suas classes
+conretas que vao implementar o mesmo, a logica aqui e evitar reescrita do
+mesmo metodo em diversas classes , ao inves disso , uma unica classe conta
+com o metodo que deve ser herdado das classes concretas 
+
+
+por exemplo : precisamos minerar dados em csv , pdf e doc, pra isso, ao inves
+de replicar varios metodos para cada classe como : dataminer, csvminer, criamos
+uma classe miner , responsavel por minerar, e implementamos em outras classes
+
+ganhos : ao injentar outro tipo de minerador como por exemplo JsonMiner, apenas
+criamos outra classe e implementamos o metodo definido na classe principal
+
+
+
+
+

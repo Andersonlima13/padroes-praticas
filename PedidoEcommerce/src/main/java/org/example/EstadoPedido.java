@@ -1,5 +1,6 @@
 package org.example;
 
-public interface ProcessamentoPedido {
-    
+public interface EstadoPedido {
+    void processar(Pedido pedido);
+
 }

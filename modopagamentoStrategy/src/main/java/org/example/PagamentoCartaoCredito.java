@@ -5,7 +5,7 @@ public class PagamentoCartaoCredito  implements PagamentoStrategy{
     private int cvv;
 
 
-    public void PagamentoStrategy(int numero, int cvv){
+    public void PagamentoCartaoCredito(int numero, int cvv){
         this.cvv = cvv;
         this.numero = numero;
     }

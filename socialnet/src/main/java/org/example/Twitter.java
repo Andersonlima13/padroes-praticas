@@ -1,15 +1,24 @@
 package org.example;
 
-public class Twitter extends {
-    public Boolean logging(String username, String password){
-        return true;
+public class Twitter extends SocialNetwork  {
+
+    @Override
+    boolean logging(String userName, Boolean pwd) {
+
+        // logica de login twitter
+        return false;
     }
 
-    public Boolean sendData(String data){
-        return true;
+    @Override
+    boolean SendData(String data) {
+//
+        // logica de envio de dados twitter
+        return false;
     }
 
-    public Boolean logout(){
-        return true;
+    @Override
+    boolean logout() {
+        // logica de saida do twitter
+        return false;
     }
 }
