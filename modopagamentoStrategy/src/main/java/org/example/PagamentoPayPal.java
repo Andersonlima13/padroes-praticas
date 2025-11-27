@@ -1,4 +1,24 @@
 package org.example;
 
-public class PagamentoPayPal {
+public class PagamentoPayPal implements PagamentoStrategy{
+    private String email;
+    private String senha;
+
+    public void PagamentoPaypal(String email,String senha){
+        this.email = email;
+        this.senha = senha;
+    }
+
+    @Override
+    public boolean pagar(double valor) {
+        if(senha == ""){
+            System.out.println("senha errada");
+
+        }
+        return true;
+    }
+
+
+
+
 }
