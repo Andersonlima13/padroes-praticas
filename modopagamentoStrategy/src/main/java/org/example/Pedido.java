@@ -1,15 +1,16 @@
 package org.example;
-//contexto
-public class Pedido {
-    private double valorPagamento;
-    private PagamentoStrategy tipoDePagamento;
 
-    public void Pedido(double valorPagamento){
-        this.tipoDePagamento = tipoDePagamento;
+public class Pedido {
+
+    private double valorPagamento;
+    private PagamentoStrategy formaDePagamento;
+
+    public Pedido(double valorPagamento) {
+        this.valorPagamento = valorPagamento;
     }
 
-    public void setFormaDePagamento(PagamentoStrategy tipoDePagamento){
-        this.tipoDePagamento = tipoDePagamento;
+    public void setFormaDePagamento(PagamentoStrategy formaDePagamento) {
+        this.formaDePagamento = formaDePagamento;
     }
 
     public void processarPagamento() {
@@ -26,5 +27,4 @@ public class Pedido {
             System.out.println("❌ Falha ao processar pagamento!");
         }
     }
-
 }
