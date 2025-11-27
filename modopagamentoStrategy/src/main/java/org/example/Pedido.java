@@ -12,9 +12,19 @@ public class Pedido {
         this.tipoDePagamento = tipoDePagamento;
     }
 
-    public void processarPagamento(PagamentoStrategy tipoDePagamento,double valorPagamento){
+    public void processarPagamento() {
+        if (formaDePagamento == null) {
+            System.out.println("❌ Nenhuma forma de pagamento definida!");
+            return;
+        }
 
+        boolean sucesso = formaDePagamento.pagar(valorPagamento);
+
+        if (sucesso) {
+            System.out.println("🎉 Pedido pago com sucesso!");
+        } else {
+            System.out.println("❌ Falha ao processar pagamento!");
+        }
     }
-
 
 }
