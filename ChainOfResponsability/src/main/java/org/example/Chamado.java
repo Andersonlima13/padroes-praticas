@@ -11,5 +11,9 @@ public class Chamado {
     }
 
 
+    public String getProblema() { return problema; }
+
+    public String getCategoria() { return categoria; }
+
 
 }

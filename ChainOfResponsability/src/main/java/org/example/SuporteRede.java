@@ -11,6 +11,10 @@ public class SuporteRede implements Suporte {
 
     @Override
     public void atenderChamado(Chamado chamado) {
-
+        if (chamado.getCategoria().equalsIgnoreCase("Rede")) {
+            System.out.println("🟦 Suporte de Rede");
+            System.out.println("Olá! Sou o Carlos e vou iniciar o atendimento para:");
+            System.out.println(chamado.getProblema());
+        }
     }
 }
