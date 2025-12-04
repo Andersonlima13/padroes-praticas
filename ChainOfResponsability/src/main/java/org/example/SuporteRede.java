@@ -16,5 +16,7 @@ public class SuporteRede implements Suporte {
             System.out.println("Olá! Sou o Carlos e vou iniciar o atendimento para:");
             System.out.println(chamado.getProblema());
         }
+        proximoSuporte.atenderChamado(chamado);
+
     }
 }
