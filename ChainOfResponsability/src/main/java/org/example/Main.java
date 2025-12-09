@@ -17,6 +17,8 @@ public class Main {
         s1.proximoSuporte(s2);
         s2.proximoSuporte(s3);
         s3.proximoSuporte(s4);
+        s1.setProximo(s)
+
 
         // iniciar a cadeia
         s1.atenderChamado(chamado);
