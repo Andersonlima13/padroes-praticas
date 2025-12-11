@@ -24,6 +24,9 @@ abstract class SocialNetwork {
 
 
     abstract boolean logging(String userName,Boolean pwd);
+
+
+
     abstract boolean SendData(String data);
     abstract boolean logout();
 
