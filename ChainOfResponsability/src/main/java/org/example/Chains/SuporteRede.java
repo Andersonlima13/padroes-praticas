@@ -1,4 +1,7 @@
-package org.example;
+package org.example.Chains;
+
+import org.example.Chamado;
+import org.example.SuporteHandler;
 
 public class SuporteRede extends SuporteHandler {
 

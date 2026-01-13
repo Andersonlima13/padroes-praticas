@@ -1,14 +1,12 @@
-package org.example;
+package org.example.Chains;
 
-public class SuporteSoftware implements Suporte {
+import org.example.Chamado;
+import org.example.Suporte;
+import org.example.SuporteHandler;
+
+public class SuporteSoftware extends SuporteHandler {
     private Suporte proximoSuporte;
 
-
-    @Override
-    public void proximoSuporte(Suporte proximoSuporte) {
-        this.proximoSuporte = proximoSuporte;
-
-    }
 
     @Override
     public void atenderChamado(Chamado chamado) {

@@ -2,12 +2,12 @@ package org.example;
 
 public abstract class SuporteHandler implements Suporte {
 
+
     protected SuporteHandler proximo;
 
-    @Override
     public SuporteHandler setProximo(SuporteHandler proximo) {
         this.proximo = proximo;
-        return proximo; // permite montar a cadeia fluent-style
+        return proximo;
     }
 
     protected void chamarProximo(Chamado chamado) {
@@ -17,4 +17,5 @@ public abstract class SuporteHandler implements Suporte {
             System.out.println("⚠ Nenhum suporte pôde resolver o problema.");
         }
     }
+
 }

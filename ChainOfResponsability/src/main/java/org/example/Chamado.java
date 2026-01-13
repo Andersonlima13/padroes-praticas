@@ -1,5 +1,5 @@
 package org.example;
-
+// entidade
 public class Chamado {
     private String problema;
     private String categoria;

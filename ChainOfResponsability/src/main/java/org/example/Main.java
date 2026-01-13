@@ -1,27 +1,30 @@
 package org.example;
 
+import org.example.Chains.SuporteGeral;
+import org.example.Chains.SuporteRede;
+import org.example.Chains.SuporteSoftware;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
 
-        Chamado chamado = new Chamado("Notebook não liga", "Hardware");
+        SuporteHandler rede = new SuporteRede();
+        SuporteHandler software = new SuporteSoftware();
+        SuporteHandler geral = new SuporteGeral();
 
-        Suporte s1 = new SuporteRede();
-        Suporte s2 = new SuporteRede();
-        Suporte s3 = new SuporteSoftware();
-        Suporte s4 = new SuporteGeral();
+        // montagem da cadeia (uma única vez)
+        rede
+                .setProximo(software)
+                .setProximo(geral);
 
-        // encadeamento da cadeia
-        s1.proximoSuporte(s2);
-        s2.proximoSuporte(s3);
-        s3.proximoSuporte(s4);
-        s1.setProximo(s)
+        Chamado chamado = new Chamado(
+                "Notebook não conecta no Wi-Fi",
+                "Rede"
+        );
 
-
-        // iniciar a cadeia
-        s1.atenderChamado(chamado);
-
+        // inicia a cadeia
+        rede.atenderChamado(chamado);
     }
 }
