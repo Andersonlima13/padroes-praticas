@@ -7,6 +7,6 @@ public class NotaFiscal implements Documento {
 
     @Override
     public void aceitar(DocumentoVisitor visitor) {
-
+        visitor.visitar(this);
     }
 }
