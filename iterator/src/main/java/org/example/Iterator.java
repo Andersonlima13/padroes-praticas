@@ -1,6 +1,6 @@
-package org.example;
+    package org.example;
 
-public interface Iterator<T> {
-    boolean hasNext();
-    T next();
-}
+    public interface Iterator<T> {
+        boolean hasNext();
+        T next();
+    }
