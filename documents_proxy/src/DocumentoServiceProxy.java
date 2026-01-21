@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DocumentoServiceProxy implements DocumentoService {
-
+// injetamos o serviço real vindo via injecao de dependencia
     private DocumentoServiceReal serviceReal;
     private Map<String, byte[]> cache = new HashMap<>();
 
